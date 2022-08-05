@@ -66,7 +66,7 @@ button:hover {
     background-color: hsl(206, 100%, 77%);
     color: #fff;
     transition: 0.5s ease-in-out;
-    
+
 }
 
 .title-arrow-wrapper {
@@ -81,11 +81,13 @@ button:hover {
     font-family: Fraunces, sans-serif;
     cursor: pointer;
 }
+
 .nav-title:hover {
     color: #ffd000;
     transition: 0.5s ease-in;
-    
+
 }
+
 .arrow {
     margin-top: 5rem;
 
@@ -174,18 +176,30 @@ button:hover {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-evenly;
-    gap: 10px;
+    gap: 5px;
     width: 100%;
     height: 400px;
     background-color: #f1f1f1;
+
 }
+
 .testimonial-intro {
     display: flex;
     justify-content: center;
     background-color: #f1f1f1;
     padding: 20px 0;
     width: 100%;
+    margin: -10px auto;
+
+    font-family: Fraunces, sans-serif;
+    text-transform: uppercase;
 }
+
+.testimonial-header {
+
+    border: 2px solid grey;
+}
+
 
 .testimonial-header {
     font-family: Fraunces, sans-serif;
@@ -200,11 +214,21 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    max-width: 720px;
+    width: 720px;
     height: 300px;
     margin: 20px 0;
+    border: 2px solid orange;
 }
 
+
+.rounded-image {
+    border-radius: 50%;
+    margin: -1rem auto;
+    width: 100px;
+    height: 100px;
+}
+
+/*
 .testimonial-title {
     width: 190px;
     height: 38px;
@@ -215,23 +239,29 @@ button:hover {
     text-align: center;
     margin-bottom: 20px;
 }
-.rounded-image {
-    border-radius: 50%;
-    margin: auto;
-    width: 100px;
-    height: 100px;
-}
+*/
 
 .testimonial-text {
-    width: 198px;
-    height: 54px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
+
+    font-size: 1.2rem;
+    font-family: Barlow;
     line-height: 18px;
     text-align: center;
-    margin-bottom: 40px;
-    padding: 0 10px;
+    margin-top: 1rem;
+    padding: .5rem 3rem;
+    border: 2px solid red;
+
+}
+
+.name {
+    margin: 1rem auto;
+    border: 2px solid blue;
+}
+
+.job-title {
+    border: 2px solid indianred;
+    margin: -.5rem auto;
+    font-family: barlow, sans-serif;
 }
 
 .gallery-wrapper {
@@ -247,31 +277,32 @@ button:hover {
 }
 
 
- footer {
-     width: 100%;
-     height: 350px;
-     background-color: hsl(168, 34%, 41%);
-     display: flex; 
-     flex-direction: column;
-     align-items: center; 
-     font-size: 1.2rem;
-     font-family: Barlow, sans-serif;
+footer {
+    width: 100%;
+    height: 350px;
+    background-color: hsl(168, 34%, 41%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+    font-family: Barlow, sans-serif;
 
- }
- .footer-logo-wrapper {
+}
 
- margin-top: 5rem;
- width: 100%;
- text-align: center;
- margin-top: 40px;
- padding: 15px 0;
+.footer-logo-wrapper {
+
+    margin-top: 5rem;
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    padding: 15px 0;
 
 
 }
 
 .links {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     gap: 5rem;
     margin-top: 5rem;
     width: 100%;
@@ -285,15 +316,16 @@ button:hover {
     list-style-type: none;
 }
 
-.links li:hover{
+.links li:hover {
     color: #fff;
 
 }
+
 .social-icons-wrapper {
     display: flex;
     margin-top: 5rem;
     gap: 3rem;
-  
+
 }
 
 
@@ -306,6 +338,19 @@ button:hover {
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
+
+
+
+
+
+/*
+@media screen and (min-width: 600px) {
+    .nav-bar {
+        display: flex;
+        flex-direction: column;
+    }
+}
+*/
 
 
     /*font-family: 'Barlow', sans-serif;
