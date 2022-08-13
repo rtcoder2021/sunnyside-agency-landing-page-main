@@ -37,15 +37,19 @@ body {
     margin-right: auto;
     margin-left: 1rem;
 
-
 }
 
-.nav-list {
-    list-style: none;
+.nav-list  {
+   
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 3rem;
+}
+
+.nav-list li {
+    list-style: none;
+    cursor: pointer;
 }
 
 button {
@@ -69,10 +73,56 @@ button:hover {
 
 }
 
+
+
+
 .title-arrow-wrapper {
     text-align: center;
 
 }
+
+.arrow {
+    margin-top: 5rem;
+    color: #ffd000;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+
+@keyframes floating {
+    from  
+       { transform: translate(0,  0px); }
+    65%  
+       { transform: translate(0, 35px); }
+  
+    to   
+       { transform: translate(0, 0px); }    
+}
+
+@keyframes color-change {
+    from  
+       { color: #fff;}
+
+    65%  
+       { color: #f9dc5c; }  
+  
+    to   
+       { color: #ffd000; }    
+}
+
+/* 
+@keyframes color-change {
+    from  
+       { background: #fff;}
+    
+  
+    to   
+       { background: #ffd000; }    
+}
+
+*/
+
 
 .nav-title {
     font-size: 5rem;
@@ -80,18 +130,17 @@ button:hover {
     margin-top: 5rem;
     font-family: Fraunces, sans-serif;
     cursor: pointer;
+    animation-name: color-change;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
 }
-
+  /*  
 .nav-title:hover {
-    color: #ffd000;
-    transition: 0.5s ease-in;
-
+color: #ffd000;
+    transition: 0.5s ease-in;  
 }
+*/
 
-.arrow {
-    margin-top: 5rem;
-
-}
 
 .transform-container,
 .standout-container {
@@ -112,17 +161,30 @@ button:hover {
 }
 
 .transform-container-content {
-
     margin: 8rem;
     padding: 4rem;
 
 }
 
+
 .transform-container-content p {
     line-height: 1.5rem;
     margin: 2rem 0;
+    color: rgb(111, 106, 106);
+    font-family: Barlow, sans-serif;
+    font-weight: 400;
+    font: size .8rem;
 }
 
+.learn-more-btn {
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: Fraunces;
+    font-size: .9rem;
+    color:hsl(168, 34%, 41%)
+    
+}
 
 .services-container {
     width: 100%;
@@ -130,6 +192,7 @@ button:hover {
     display: flex;
     flex-direction: space-between;
     justify-content: center;
+    
 }
 
 .left-image-container,
@@ -190,24 +253,9 @@ button:hover {
     padding: 20px 0;
     width: 100%;
     margin: -10px auto;
-
     font-family: Fraunces, sans-serif;
     text-transform: uppercase;
 }
-
-.testimonial-header {
-
-    border: 2px solid grey;
-}
-
-
-.testimonial-header {
-    font-family: Fraunces, sans-serif;
-    font-size: 1.5rem;
-    color: #1D3557;
-
-}
-
 
 .testimony {
     display: flex;
@@ -217,9 +265,21 @@ button:hover {
     width: 720px;
     height: 300px;
     margin: 20px 0;
-    border: 2px solid orange;
+    
 }
 
+.testimonial-header {
+    
+    color: lightgrey;
+}
+
+
+.testimonial-header {
+    font-family: Fraunces, sans-serif;
+    font-size: 1.5rem;
+    color: #1D3557;
+
+}
 
 .rounded-image {
     border-radius: 50%;
@@ -245,21 +305,20 @@ button:hover {
 
     font-size: 1.2rem;
     font-family: Barlow;
-    line-height: 18px;
+    line-height: 1.3rem;
     text-align: center;
-    margin-top: 1rem;
-    padding: .5rem 3rem;
-    border: 2px solid red;
+    margin-top: 1.5rem;
+    padding: .5rem 5rem;
+    color: rgb(135, 126, 126);
 
 }
 
 .name {
-    margin: 1rem auto;
-    border: 2px solid blue;
+    margin: 1rem auto; 
 }
 
 .job-title {
-    border: 2px solid indianred;
+   
     margin: -.5rem auto;
     font-family: barlow, sans-serif;
 }
@@ -338,9 +397,6 @@ footer {
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
-
-
-
 
 
 /*
