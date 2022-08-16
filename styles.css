@@ -73,7 +73,16 @@ button:hover {
 
 }
 
-
+.nav-title {
+    font-size: 5rem;
+    font-weight: 600;
+    margin-top: 5rem;
+    font-family: Fraunces, sans-serif;
+    cursor: pointer;
+    animation-name: color-change;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
 
 
 .title-arrow-wrapper {
@@ -124,16 +133,6 @@ button:hover {
 */
 
 
-.nav-title {
-    font-size: 5rem;
-    font-weight: 600;
-    margin-top: 5rem;
-    font-family: Fraunces, sans-serif;
-    cursor: pointer;
-    animation-name: color-change;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-}
   /*  
 .nav-title:hover {
 color: #ffd000;
